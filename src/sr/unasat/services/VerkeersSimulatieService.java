@@ -30,7 +30,9 @@ public class VerkeersSimulatieService {
     }
 
     public void startSimulatie() {
-        for (int i = 0; i < verkeersLicht.length; i++) {
+
+        System.out.println("Verkeerslicht simulatie eerste ronde");
+        for (int i = 0; i < verkeersLicht.length; i++) { //1 ronde
             System.out.println("Verkeerslicht staat op groen voor " + verkeersLicht[i]);
             if (verkeersLicht[i].equals(wegdekNoord.getWegdekNaam())){
                 List<Car> carList = wegdekNoord.getCarList();
