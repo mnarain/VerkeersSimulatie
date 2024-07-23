@@ -29,8 +29,11 @@ public class VerkeersSimulatieService {
         wegdekNoord = new Wegdek(NOORD, carListNoord);
     }
 
-    public void startSimulatie() {
 
+    //Op dit moment voert de startsimulatie maar 1 ronde uit
+    //Pas de code aan zodat de simulatie meerdere rondes uitvoert tot alle voertuigen zijn opgereden
+    //De oplossing mag in onderstaandemethodof een aparte method
+    public void startSimulatie() {
         System.out.println("Verkeerslicht simulatie eerste ronde");
         for (int i = 0; i < verkeersLicht.length; i++) { //1 ronde
             System.out.println("Verkeerslicht staat op groen voor " + verkeersLicht[i]);
